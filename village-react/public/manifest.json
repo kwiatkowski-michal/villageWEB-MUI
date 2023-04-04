@@ -1,0 +1,22 @@
+{
+    "name": "villageWEB - Kruszyn Krajeński",
+    "short_name": "villageWEB",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "minimal-ui",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "type": "image/x-icon",
+            "sizes": "256x256"
+        },
+        {
+            "src": "favicon.ico",
+            "type": "image/png",
+            "sizes": "256x256"
+        }
+    ]
+}

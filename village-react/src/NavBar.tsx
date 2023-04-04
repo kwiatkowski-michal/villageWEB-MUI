@@ -9,9 +9,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import Link from '../src/Link';
 
-const pages = ['Kupa', 'hihi', 'Blog'];
-
+const pages = ['Strona główna', 'Dokumenty'];
+const links = ['/', '/dokumenty'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -71,8 +72,8 @@ function ResponsiveAppBar() {
                             sx={{
                                 display: { xs: 'block', md: 'none' },
                             }}>
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                            {pages.map((page, index) => (
+                                <MenuItem href={links[index]} component="a" key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">{page}</Typography>
                                 </MenuItem>
                             ))}
@@ -94,8 +95,9 @@ function ResponsiveAppBar() {
                         villageWEB
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
+                        {pages.map((page, index) => (
                             <Button
+                            href={links[index]} component="a" 
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
