@@ -31,6 +31,7 @@
     "typescript": "5.0.3"
   },
   "devDependencies": {
+    "next": "13.2.4",
     "gh-pages": "^5.0.0"
   }
 }
