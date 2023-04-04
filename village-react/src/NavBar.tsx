@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Link from '../src/Link';
+import { Image } from '@mui/icons-material';
 
 const pages = ['Strona główna', 'Dokumenty'];
 const links = ['/', '/dokumenty'];
@@ -28,10 +29,9 @@ function ResponsiveAppBar() {
     return (
         <AppBar position="static">
             <Container maxWidth="xl">
+                
                 <Toolbar disableGutters>
                     <Typography
-                        variant="h6"
-                        noWrap
                         component="a"
                         href="/"
                         sx={{
@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        villageWEB
+                        <img src="/img/logo.svg" alt="logo" height="40"/>
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -80,8 +80,6 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
                     <Typography
-                        variant="h6"
-                        noWrap
                         component="a"
                         href="/"
                         sx={{
@@ -92,7 +90,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        villageWEB
+                        <img src="/img/logo-rev.svg" alt="logo" height="40"/>
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page, index) => (
