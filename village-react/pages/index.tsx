@@ -5,8 +5,6 @@ import Box from '@mui/material/Box';
 import HomeWelcome from '@/homeWelcome';
 export default function Home() {
   return (
-    <Container fixed>
       <HomeWelcome />
-    </Container>
   );
 }

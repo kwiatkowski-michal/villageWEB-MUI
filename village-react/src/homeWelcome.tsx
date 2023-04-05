@@ -1,33 +1,68 @@
-import { Box, Button, Hidden, ListItem, Stack, Typography } from "@mui/material";
+import { Launch, Outbox } from "@mui/icons-material";
+import { Box, Button, Container, Hidden, Paper, Stack, Typography, styled } from "@mui/material";
 import Grid from "@mui/material/Grid";
+import BackImage from "../public/img/tlo.png"
+import { useTheme } from '@mui/material/styles';
+
 
 const homeWelcome = () => {
+    const theme = useTheme();
     return (
-        <Grid container alignItems="center" marginTop={6}>
-            <Grid xs={12} md={8}>
-                <Box>
-                <Typography variant="h2" component="h1" gutterBottom>
-                    Witamy w Kruszynie Krajeńskim
-                </Typography>
-                <Typography variant="body1">
-                    Kruszyn Krajeński to wieś wykazująca znaczną dynamikę rozwoju
-                    funkcji pozarolniczej, na co wpływa oddziaływanie aglomeracji
-                    Bydgoszczy. Sołectwo obejmuje zarówno tereny zabudowane na
-                    piaszczystej terasie dolinnej m.in. wzdłuż drogi krajowej nr 5
-                    Bydgoszcz-Poznań.
-                </Typography>
-                <Stack direction="row" spacing={2} marginTop={2} justifyContent="flex-start">
-                    <Button size="large" variant="contained">Aktualności</Button>
-                    <Button size="large" variant="outlined">Kontakt</Button>
-                </Stack>
-                </Box>
-            </Grid>
-            <Hidden mdDown>
-            <Grid xs={12} md={4} p={{lg:10, md: 4}} alignItems="center" marginTop={{ xs: 3, md: 0 }} >
-                    <Box component="img" src="/img/herb.svg" alt="kruszyn"/>
-            </Grid>
+        <>
+            <Hidden mdUp>
+                <Grid item container alignItems="center" p={5}>
+                    <Grid xs={12} md={8}>
+                        <Box>
+                            <Typography variant="h3" component="h3" gutterBottom>
+                                Witamy w Kruszynie Krajeńskim
+                            </Typography>
+                            <Typography variant="body1" display="block">
+                                Kruszyn Krajeński to wieś wykazująca znaczną dynamikę rozwoju
+                                funkcji pozarolniczej, na co wpływa oddziaływanie aglomeracji
+                                Bydgoszczy. Sołectwo obejmuje zarówno tereny zabudowane na
+                                piaszczystej terasie dolinnej m.in. wzdłuż drogi krajowej nr 5
+                                Bydgoszcz-Poznań.
+                            </Typography>
+                            <Stack spacing={2} marginTop={2} justifyContent="flex-start">
+                                <Button size="large" endIcon={<Launch />} variant="contained">Aktualności</Button>
+                                <Button size="large" variant="outlined">Kontakt</Button>
+                            </Stack>
+                        </Box>
+                    </Grid>
+                </Grid>
             </Hidden>
-        </Grid>
+            <Hidden mdDown>
+                <Box py={6} sx={{ backgroundColor: theme.palette.secondary.main }}>
+                    <Container fixed>
+                        <Paper elevation={4}>
+                            <Grid item container alignItems="center" p={10}>
+                                <Grid xs={12} md={8}>
+                                    <Box>
+                                        <Typography variant="h2" component="h4" gutterBottom>
+                                            Witamy w Kruszynie Krajeńskim
+                                        </Typography>
+                                        <Typography variant="h5" display="block">
+                                            Kruszyn Krajeński to wieś wykazująca znaczną dynamikę rozwoju
+                                            funkcji pozarolniczej, na co wpływa oddziaływanie aglomeracji
+                                            Bydgoszczy. Sołectwo obejmuje zarówno tereny zabudowane na
+                                            piaszczystej terasie dolinnej m.in. wzdłuż drogi krajowej nr 5
+                                            Bydgoszcz-Poznań.
+                                        </Typography>
+                                        <Stack direction="row" spacing={2} marginTop={2} justifyContent="flex-start">
+                                            <Button size="large" endIcon={<Launch />} variant="contained">Aktualności</Button>
+                                            <Button size="large" variant="outlined">Kontakt</Button>
+                                        </Stack>
+                                    </Box>
+                                </Grid>
+                                <Grid xs={12} md={4} textAlign="end">
+                                    <Box component="img" src="/img/herb.svg" width={2 / 3} />
+                                </Grid>
+                            </Grid>
+                        </Paper>
+                    </Container>
+                </Box>
+            </Hidden>
+        </>
     );
 };
 

@@ -34,6 +34,10 @@ const theme = createTheme({
       fontFamily: montserrat.style.fontFamily,
       fontWeight: 600,
     },
+    h3: {
+      fontFamily: montserrat.style.fontFamily,
+      fontWeight: 600,
+    },
     button: {
       fontFamily: montserrat.style.fontFamily,
       fontWeight: 600,

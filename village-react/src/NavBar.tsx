@@ -9,8 +9,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import { Stack } from '@mui/material';
 const pages = ['Strona główna', 'Dokumenty'];
 const links = ['/', '/dokumenty'];
+const icons = [<HomeRoundedIcon/>, <InsertDriveFileIcon/>];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -28,19 +32,7 @@ function ResponsiveAppBar() {
             <Container maxWidth="xl">
                 
                 <Toolbar disableGutters>
-                    <Typography
-                        component="a"
-                        href="/"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontWeight: 700,
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        <img src="/img/logo.svg" alt="logo" height="40"/>
-                    </Typography>
+                
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -80,7 +72,7 @@ function ResponsiveAppBar() {
                         component="a"
                         href="/"
                         sx={{
-                            mr: 2,
+                            mr: 1,
                             display: { xs: 'flex', md: 'none' },
                             fontWeight: 700,
                             color: 'inherit',
@@ -89,17 +81,35 @@ function ResponsiveAppBar() {
                     >
                         <img src="/img/logo-rev.svg" alt="logo" height="40"/>
                     </Typography>
+                    <Typography
+                        component="a"
+                        href="/"
+                        sx={{
+                            mr: 4.5,
+                            display: { xs: 'none', md: 'flex' },
+                            fontWeight: 700,
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        <img src="/img/logo.svg" alt="logo" height="40"/>
+                    </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Stack spacing={2} direction="row">
                         {pages.map((page, index) => (
+                            
                             <Button
-                            href={links[index]} component="a" 
+                            href={links[index]}
+                            startIcon={icons[index]}
+                            component="a" 
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                sx={{ my: 2, color: 'white'}}
                             >
                                 {page}
                             </Button>
                         ))}
+                    </Stack>
                     </Box>
                 </Toolbar>
             </Container>
