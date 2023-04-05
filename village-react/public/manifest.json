@@ -4,29 +4,34 @@
     "description": "Aplikacja mobilna Kruszyna Krajeńskiego. Dzięki niej będziesz na bieżąco z aktualnościami, wydarzeniami, informacjami o miejscach, w którym mieszkasz.",
     "theme_color": "#172815",
     "background_color": "#172815",
-    "display": "minimal-ui",
-    "id": "/",
+    "start_url": "../",
+    "id": "com.villageweb.kruszyn",
+    "display_override": [
+        "window-control-overlay",
+        "minimal-ui"
+    ],
+    "display": "standalone",
+    "prefer_related_applications": true,
     "orientation": "portrait",
-    "scope": "/",
-    "start_url": "/",
     "shortcuts": [
         {
-            "name": "Aktualności",
-            "short_name": "Aktualności",
-            "description": "Strona Facebookowa Kruszyna Krajeńskiego",
-            "url": "https://www.facebook.com/KruszynBialeBlota/"
+            "name": "Dokumenty o Kruszynie",
+            "short_name": "Dokumenty",
+            "url": "../dokumenty"
         }
     ],
     "icons": [
         {
             "src": "favicon.ico",
             "type": "image/x-icon",
-            "sizes": "256x256 192x192 512x512"
+            "sizes": "256x256",
+            "purpose": "any"
         },
         {
             "src": "favicon.ico",
             "type": "image/png",
-            "sizes": "256x256 192x192 512x512"
+            "sizes": "256x256",
+            "purpose": "any"
         }
     ]
 }
