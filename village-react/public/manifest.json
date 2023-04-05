@@ -9,6 +9,14 @@
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
+    "shortcuts": [
+        {
+            "name": "Aktualności",
+            "short_name": "Aktualności",
+            "description": "Strona Facebookowa Kruszyna Krajeńskiego",
+            "url": "https://www.facebook.com/KruszynBialeBlota/"
+        }
+    ],
     "icons": [
         {
             "src": "favicon.ico",
@@ -20,6 +28,5 @@
             "type": "image/png",
             "sizes": "256x256 192x192 512x512"
         }
-    
     ]
 }
