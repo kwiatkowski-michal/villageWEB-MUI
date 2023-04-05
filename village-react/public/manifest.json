@@ -1,21 +1,9 @@
 {
     "name": "villageWEB - Kruszyn Krajeński",
     "short_name": "villageWEB",
-    "description": "Aplikacja mobilna Kruszyna Krajeńskiego. Dzięki niej będziesz na bieżąco z aktualnościami, wydarzeniami, informacjami o miejscach, w którym mieszkasz.",
     "theme_color": "#172815",
     "background_color": "#172815",
-    "start_url": "../",
-    "id": "com.villageweb.kruszyn",
-    "display": "standalone",
-    "prefer_related_applications": true,
     "orientation": "portrait",
-    "shortcuts": [
-        {
-            "name": "Dokumenty o Kruszynie",
-            "short_name": "Dokumenty",
-            "url": "../dokumenty"
-        }
-    ],
     "icons": [
         {
             "src": "favicon.ico",
