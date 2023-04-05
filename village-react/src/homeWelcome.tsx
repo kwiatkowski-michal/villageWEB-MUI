@@ -1,3 +1,4 @@
+import React from "react";
 import { Launch, Outbox } from "@mui/icons-material";
 import { Box, Button, Container, Hidden, Paper, Stack, Typography, styled } from "@mui/material";
 import Grid from "@mui/material/Grid";
@@ -5,7 +6,7 @@ import BackImage from "../public/img/tlo.png"
 import { useTheme } from '@mui/material/styles';
 
 
-const homeWelcome = () => {
+const HomeWelcome = () => {
     const theme = useTheme();
     return (
         <>
@@ -66,4 +67,4 @@ const homeWelcome = () => {
     );
 };
 
-export default homeWelcome;
+export default HomeWelcome;
