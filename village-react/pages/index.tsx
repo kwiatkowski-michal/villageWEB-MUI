@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { Hidden } from '@mui/material';
+import { Box, Hidden } from '@mui/material';
 import HomeDesktop, {HomeMobile } from '@/homeWelcome';
+import Map from '@/Map';
+
 
 
 
@@ -14,6 +16,9 @@ export default function Home() {
     <Hidden mdDown>
       <HomeDesktop />
     </Hidden>
+    <Box>
+    <Map />
+    </Box>
     </>
       
   );

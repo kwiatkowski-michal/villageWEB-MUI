@@ -53,9 +53,9 @@ function ResponsiveAppBar() {
                         <img src="/img/logo-rev.svg" alt="logo" height="40" />
                     </Typography>
                     
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Stack spacing={2} direction="row"> {newPages.map((page, index) => (
-                            <Button href={page.link} startIcon={page.icon} component="a" key={index} onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white' }}>{page.name}
+                            <Button href={page.link} startIcon={page.icon} component="a" key={index} onClick={handleCloseNavMenu} sx={{ mr: 2, color: 'white' }}>{page.name}
                             </Button>
                             ))}
                         </Stack>
