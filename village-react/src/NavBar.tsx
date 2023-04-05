@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import { Stack } from '@mui/material';
-
+import theme from '@/theme';
 const newPages = [{name: 'Strona główna', link: '/', icon: <HomeRoundedIcon />}, {name: 'Dokumenty', link: '/dokumenty', icon: <InsertDriveFileIcon />}]
 
 function ResponsiveAppBar() {
@@ -27,11 +27,10 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar color='primary' position="sticky" sx={{boxShadow:"none"}}>
             <Container maxWidth="xl">
-
                 <Toolbar disableGutters>
-                <Typography component="a"href="/" sx={{mr: 4.5, display: { xs: 'none', md: 'flex' }, fontWeight: 700, color: 'inherit', textDecoration: 'none',}}>
+                <Typography component="a"href="/" sx={{mr: 4.5, display: { xs: 'none', md: 'flex' }, fontWeight: 700, textDecoration: 'none',}}>
                         <img src="/img/logo.svg" alt="logo" height="40" />
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

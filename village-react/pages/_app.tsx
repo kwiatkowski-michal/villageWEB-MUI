@@ -24,7 +24,6 @@ export default function MyApp(props: MyAppProps) {
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <NavBar />
         <Component {...pageProps} />
