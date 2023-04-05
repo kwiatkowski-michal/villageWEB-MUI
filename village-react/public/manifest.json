@@ -6,10 +6,6 @@
     "background_color": "#172815",
     "start_url": "../",
     "id": "com.villageweb.kruszyn",
-    "display_override": [
-        "window-control-overlay",
-        "minimal-ui"
-    ],
     "display": "standalone",
     "prefer_related_applications": true,
     "orientation": "portrait",
