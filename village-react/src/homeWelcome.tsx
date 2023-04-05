@@ -32,7 +32,7 @@ const homeWelcome = () => {
                 </Grid>
             </Hidden>
             <Hidden mdDown>
-                <Box py={6} sx={{ backgroundColor: theme.palette.secondary.main }}>
+                <Box py={6} sx={{ backgroundColor: theme.palette.primary.main }}>
                     <Container fixed>
                         <Paper elevation={4}>
                             <Grid item container alignItems="center" p={10}>
