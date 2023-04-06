@@ -1,9 +1,10 @@
 import * as React from "react";
-import { Box, Hidden } from "@mui/material";
+import { Hidden } from "@mui/material";
 import HomeDesktop, { HomeMobile } from "@/homeWelcome";
 import Map from "@/Map";
 import Footer from "@/Footer";
-
+import { FactsMobile } from "@/Facts";
+import FactsDesktop from "@/Facts";
 
 export default function Home() {
   return (
@@ -13,6 +14,12 @@ export default function Home() {
       </Hidden>
       <Hidden mdDown>
         <HomeDesktop />
+      </Hidden>
+      <Hidden mdUp>
+        <FactsMobile />
+      </Hidden>
+      <Hidden mdDown>
+        <FactsDesktop/>
       </Hidden>
         <Map />
         <Footer/>

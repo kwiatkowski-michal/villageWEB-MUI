@@ -16,6 +16,9 @@ export const montserrat = Montserrat({
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
 });
 
+
+
+
 // Create a theme instance.
 const theme = createTheme({
   palette: {
@@ -38,6 +41,15 @@ const theme = createTheme({
     h3: {
       fontFamily: montserrat.style.fontFamily,
       fontWeight: 600,
+    },
+    h4: {
+      fontFamily: montserrat.style.fontFamily,
+      fontWeight: 600,
+    },
+    h6: {
+      fontFamily: montserrat.style.fontFamily,
+      fontWeight: 600,
+      fontSize: '2rem'
     },
     button: {
       fontFamily: montserrat.style.fontFamily,

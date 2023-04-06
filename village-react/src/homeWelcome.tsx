@@ -14,7 +14,7 @@ import { useTheme } from "@mui/material/styles";
 
 const HomeMobile = () => {
   return (
-    <Grid item container alignItems="center" p={5}>
+    <Grid item container alignItems="center" p={5} mb={7}>
       <Grid xs={12} md={8}>
         <Box>
           <Typography variant="h3" component="h3" gutterBottom>

@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import { Stack } from "@mui/material";
-import theme from "@/theme";
+
 const newPages = [
   { name: "Strona główna", link: "/", icon: <HomeRoundedIcon /> },
   { name: "Dokumenty", link: "/dokumenty", icon: <InsertDriveFileIcon /> },
