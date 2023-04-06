@@ -20,7 +20,7 @@
     ],
     "related_applications": [
         {
-            "platform": "web",
+            "platform": "webapp",
             "url": "https://villageapp.vercel.app",
             "id": "io.village.app"
         }
