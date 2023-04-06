@@ -17,5 +17,12 @@
             "sizes": "256x256",
             "purpose": "any"
         }
+    ],
+    "related_applications": [
+        {
+            "platform": "web",
+            "url": "https://villageapp.vercel.app",
+            "id": "io.village.app"
+        }
     ]
 }
