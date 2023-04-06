@@ -1,2 +1,2 @@
-# village-react
- villageWEB re-wrtitten on React
+# villageWEB ([ReactJS](reactjs.org) and [MaterialUI](mui.com) powered)
+
