@@ -6,7 +6,6 @@ import CropSquareRoundedIcon from '@mui/icons-material/CropSquareRounded';
 import VerifiedRoundedIcon from '@mui/icons-material/VerifiedRounded';
 import AssuredWorkloadRoundedIcon from '@mui/icons-material/AssuredWorkloadRounded';
 import GroupsRoundedIcon from '@mui/icons-material/GroupRounded';
-import { WidthFull } from "@mui/icons-material";
 
 export function FactsMobile() {
     const theme = useTheme();
@@ -71,21 +70,21 @@ export default function FactsDesktop() {
                                         <PeopleOutlineRoundedIcon />
                                         <Typography variant="h6">Liczba ludności</Typography>
                                     </Stack>
-                                    <Typography variant="h5" gutterBottom>
+                                    <Typography variant="body1" gutterBottom>
                                         1 598 osób
                                     </Typography>
                                     <Stack direction="row" alignItems="center" gap={1}>
                                         <CropSquareRoundedIcon />
                                         <Typography variant="h6">Powierzchnia</Typography>
                                     </Stack>
-                                    <Typography variant="h5" gutterBottom>
+                                    <Typography variant="body1" gutterBottom>
                                         15,35 km²
                                     </Typography>
                                     <Stack direction="row" alignItems="center" gap={1}>
                                         <VerifiedRoundedIcon />
                                         <Typography variant="h6">Sołtys</Typography>
                                     </Stack>
-                                    <Typography variant="h5" gutterBottom>
+                                    <Typography variant="body1" gutterBottom>
                                         Anetta Steltmann
                                     </Typography>
 
@@ -99,19 +98,19 @@ export default function FactsDesktop() {
                                         <AssuredWorkloadRoundedIcon />
                                         <Typography variant="h6">Rada Sołecka</Typography>
                                     </Stack>
-                                    <Typography variant="h5" >
+                                    <Typography variant="body1" >
                                         Marek Łudziński - przewodniczący
                                     </Typography>
-                                    <Typography variant="h5" >
+                                    <Typography variant="body1" >
                                         Julita Joachimowska - sekretarz
                                     </Typography>
-                                    <Typography variant="h5" >
+                                    <Typography variant="body1" >
                                         Iwona Maj-Imbirska
                                     </Typography>
-                                    <Typography variant="h5" >
+                                    <Typography variant="body1" >
                                         Helena Bielska
                                     </Typography>
-                                    <Typography variant="h5" >
+                                    <Typography variant="body1" >
                                         Wiesława Paluch
                                     </Typography>
                                 </Box>

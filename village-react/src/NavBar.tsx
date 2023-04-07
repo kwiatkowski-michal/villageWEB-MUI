@@ -19,6 +19,8 @@ const newPages = [
   { name: "Dokumenty", link: "/dokumenty", icon: <InsertDriveFileIcon /> },
 ];
 
+
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -33,8 +35,9 @@ function ResponsiveAppBar() {
   };
   const trigger = useScrollTrigger();
   return (
+    <>
     <Slide appear={false} direction="down" in={!trigger}>
-    <AppBar color="primary" position="sticky" sx={{ boxShadow: "none" }}>
+    <AppBar color="primary"  sx={{ boxShadow: "none" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -118,6 +121,7 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
     </Slide>
+    </>
   );
 }
 export default ResponsiveAppBar;
