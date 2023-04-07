@@ -37,7 +37,7 @@ function ResponsiveAppBar() {
   return (
     <>
     <Slide appear={false} direction="down" in={!trigger}>
-    <AppBar color="primary"  sx={{ boxShadow: "none" }}>
+    <AppBar color="primary" position="sticky" sx={{ boxShadow: "none" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
