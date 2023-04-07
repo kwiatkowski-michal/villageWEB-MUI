@@ -7,6 +7,7 @@ import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
 import NavBar from '../src/NavBar';
 import Head from 'next/head';
+import Footer from "@/Footer";
 
 
 
@@ -26,9 +27,11 @@ export default function MyApp(props: MyAppProps) {
       </Head>
 
       <ThemeProvider theme={theme}>
+      
         <CssBaseline />
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </CacheProvider>
   );

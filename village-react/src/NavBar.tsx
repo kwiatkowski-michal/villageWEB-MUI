@@ -11,7 +11,8 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
-import { Stack } from "@mui/material";
+import { Slide, Stack, useScrollTrigger } from "@mui/material";
+
 
 const newPages = [
   { name: "Strona główna", link: "/", icon: <HomeRoundedIcon /> },
@@ -30,8 +31,9 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  const trigger = useScrollTrigger();
   return (
+    <Slide appear={false} direction="down" in={!trigger}>
     <AppBar color="primary" position="sticky" sx={{ boxShadow: "none" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -115,6 +117,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
+    </Slide>
   );
 }
 export default ResponsiveAppBar;

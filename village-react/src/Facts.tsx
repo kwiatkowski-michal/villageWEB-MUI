@@ -58,7 +58,7 @@ export default function FactsDesktop() {
         <>
             <Box pb={6} sx={{ backgroundColor: theme.palette.primary.main }}>
                 <Container fixed>
-                    <Grid container rowSpacing={6} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                    <Grid container rowSpacing={6} columnSpacing={7}>
                         <Grid item xs={6}>
                             <Paper elevation={4}>
                                 <Box p={5}>
@@ -115,7 +115,6 @@ export default function FactsDesktop() {
                     </Grid>
                 </Container>
             </Box>
-
         </>
     );
 }
