@@ -5,6 +5,8 @@ import PeopleOutlineRoundedIcon from '@mui/icons-material/PeopleOutlineRounded';
 import CropSquareRoundedIcon from '@mui/icons-material/CropSquareRounded';
 import VerifiedRoundedIcon from '@mui/icons-material/VerifiedRounded';
 import AssuredWorkloadRoundedIcon from '@mui/icons-material/AssuredWorkloadRounded';
+import GroupsRoundedIcon from '@mui/icons-material/GroupRounded';
+import { WidthFull } from "@mui/icons-material";
 
 export function FactsMobile() {
     const theme = useTheme();
@@ -15,19 +17,22 @@ export function FactsMobile() {
                     <Grid item xs={12}>
                         <Paper elevation={4}>
                             <Box p={5}>
-                                <Typography variant="h6">Liczba ludności</Typography>
+                                <Typography variant="h6">
+                                <GroupsRoundedIcon sx={{ mr: "0.5rem" }}/>
+                                    Liczba ludności
+                                    </Typography>
                                 <Typography variant="body1" gutterBottom>
                                     1 598 osób
                                 </Typography>
-                                <Typography variant="h6">Powierzchnia</Typography>
+                                <Typography variant="h6"><CropSquareRoundedIcon sx={{ mr: "0.5rem" }}/>Powierzchnia</Typography>
                                 <Typography variant="body1" gutterBottom>
                                     15,35 km²
                                 </Typography>
-                                <Typography variant="h6">Sołtys</Typography>
+                                <Typography variant="h6"><VerifiedRoundedIcon sx={{ mr: "0.5rem" }}/>Sołtys</Typography>
                                 <Typography variant="body1" gutterBottom>
                                     Anetta Steltmann
                                 </Typography>
-                                <Typography variant="h6">Rada Sołecka</Typography>
+                                <Typography variant="h6"><AssuredWorkloadRoundedIcon sx={{ mr: "0.5rem" }}/>Rada Sołecka</Typography>
                                 <Typography variant="body1" >
                                     Marek Łudziński - przewodniczący
                                 </Typography>
