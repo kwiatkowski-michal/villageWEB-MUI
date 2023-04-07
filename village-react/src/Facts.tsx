@@ -6,6 +6,8 @@ import CropSquareRoundedIcon from '@mui/icons-material/CropSquareRounded';
 import VerifiedRoundedIcon from '@mui/icons-material/VerifiedRounded';
 import AssuredWorkloadRoundedIcon from '@mui/icons-material/AssuredWorkloadRounded';
 import GroupsRoundedIcon from '@mui/icons-material/GroupRounded';
+import EventAvailableRoundedIcon from '@mui/icons-material/EventAvailableRounded';
+import NewMeeting from "./Meeting";
 
 export function FactsMobile() {
     const theme = useTheme();
@@ -15,39 +17,51 @@ export function FactsMobile() {
                 <Grid container rowSpacing={6}>
                     <Grid item xs={12}>
                         <Paper elevation={4}>
-                            <Box p={5}>
-                                <Typography variant="h6">
-                                <GroupsRoundedIcon sx={{ mr: "0.5rem" }}/>
-                                    Liczba ludności
+                            <Stack p={5} gap={2}>
+                                <Box>
+                                    <Typography sx={{ lineHeight: "1.2" }} variant="h6">
+                                        <GroupsRoundedIcon sx={{ mr: "0.5rem" }} />
+                                        Liczba ludności
                                     </Typography>
-                                <Typography variant="body1" gutterBottom>
-                                    1 598 osób
-                                </Typography>
-                                <Typography variant="h6"><CropSquareRoundedIcon sx={{ mr: "0.5rem" }}/>Powierzchnia</Typography>
-                                <Typography variant="body1" gutterBottom>
-                                    15,35 km²
-                                </Typography>
-                                <Typography variant="h6"><VerifiedRoundedIcon sx={{ mr: "0.5rem" }}/>Sołtys</Typography>
-                                <Typography variant="body1" gutterBottom>
-                                    Anetta Steltmann
-                                </Typography>
-                                <Typography variant="h6"><AssuredWorkloadRoundedIcon sx={{ mr: "0.5rem" }}/>Rada Sołecka</Typography>
-                                <Typography variant="body1" >
-                                    Marek Łudziński - przewodniczący
-                                </Typography>
-                                <Typography variant="body1" >
-                                    Julita Joachimowska - sekretarz
-                                </Typography>
-                                <Typography variant="body1" >
-                                    Iwona Maj-Imbirska
-                                </Typography>
-                                <Typography variant="body1" >
-                                    Helena Bielska
-                                </Typography>
-                                <Typography variant="body1" >
-                                    Wiesława Paluch
-                                </Typography>
-                            </Box>
+                                    <Typography variant="body1" gutterBottom>
+                                        1 598 osób
+                                    </Typography>
+                                </Box>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><CropSquareRoundedIcon sx={{ mr: "0.5rem" }} />Powierzchnia</Typography>
+                                    <Typography variant="body1" gutterBottom>
+                                        15,35 km²
+                                    </Typography>
+                                </Box>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><VerifiedRoundedIcon sx={{ mr: "0.5rem" }} />Sołtys</Typography>
+                                    <Typography variant="body1" gutterBottom>
+                                        Anetta Steltmann
+                                    </Typography>
+                                </Box>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><AssuredWorkloadRoundedIcon sx={{ mr: "0.5rem" }} />Rada Sołecka</Typography>
+                                    <Typography variant="body1" >
+                                        Marek Łudziński - przewodniczący
+                                    </Typography>
+                                    <Typography variant="body1" >
+                                        Julita Joachimowska - sekretarz
+                                    </Typography>
+                                    <Typography variant="body1" >
+                                        Iwona Maj-Imbirska
+                                    </Typography>
+                                    <Typography variant="body1" >
+                                        Helena Bielska
+                                    </Typography>
+                                    <Typography variant="body1" >
+                                        Wiesława Paluch
+                                    </Typography>
+                                </Box>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><EventAvailableRoundedIcon sx={{ mr: "0.5rem" }} />Najblisze spotkanie</Typography>
+                                    <NewMeeting></NewMeeting>
+                                </Box>
+                            </Stack>
                         </Paper>
                     </Grid>
                 </Grid>
