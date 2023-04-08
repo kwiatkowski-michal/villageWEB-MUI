@@ -4,7 +4,7 @@ function NewMeeting () {
   return (
     <>
       {meetings.map((meeting, index) => (
-          <span>{meeting.date}</span>
+          <span key={index}>{meeting.date}</span>
       ))}
     </>
   )
