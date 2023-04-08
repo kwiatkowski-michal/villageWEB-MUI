@@ -12,11 +12,13 @@ import MenuItem from "@mui/material/MenuItem";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import { Slide, Stack, useScrollTrigger } from "@mui/material";
+import ElderlyRoundedIcon from '@mui/icons-material/ElderlyRounded';
 
 
 const newPages = [
   { name: "Strona główna", link: "/", icon: <HomeRoundedIcon /> },
   { name: "Dokumenty", link: "/dokumenty", icon: <InsertDriveFileIcon /> },
+  { name: "Klub Seniora", link: "/klub-seniora", icon: <ElderlyRoundedIcon /> },
 ];
 
 

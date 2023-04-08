@@ -78,40 +78,38 @@ export default function FactsDesktop() {
                 <Container fixed>
                     <Grid container rowSpacing={6} columnSpacing={7}>
                         <Grid item xs={6}>
-                            <Paper elevation={4}>
-                                <Box p={5}>
-                                    <Stack direction="row" alignItems="center" gap={1}>
-                                        <PeopleOutlineRoundedIcon />
-                                        <Typography variant="h6">Liczba ludności</Typography>
-                                    </Stack>
+                            <Paper elevation={4} sx={{ height: "100%" }}>
+                            <Stack p={5} gap={2}>
+                                <Box>
+                                    <Typography sx={{ lineHeight: "1.2" }} variant="h6">
+                                        <GroupsRoundedIcon sx={{ mr: "0.5rem" }} />
+                                        Liczba ludności
+                                    </Typography>
                                     <Typography variant="body1" gutterBottom>
                                         1 598 osób
                                     </Typography>
-                                    <Stack direction="row" alignItems="center" gap={1}>
-                                        <CropSquareRoundedIcon />
-                                        <Typography variant="h6">Powierzchnia</Typography>
-                                    </Stack>
+                                </Box>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><CropSquareRoundedIcon sx={{ mr: "0.5rem" }} />Powierzchnia</Typography>
                                     <Typography variant="body1" gutterBottom>
                                         15,35 km²
                                     </Typography>
-                                    <Stack direction="row" alignItems="center" gap={1}>
-                                        <VerifiedRoundedIcon />
-                                        <Typography variant="h6">Sołtys</Typography>
-                                    </Stack>
+                                </Box>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><VerifiedRoundedIcon sx={{ mr: "0.5rem" }} />Sołtys</Typography>
                                     <Typography variant="body1" gutterBottom>
                                         Anetta Steltmann
                                     </Typography>
-
                                 </Box>
+
+                            </Stack>
                             </Paper>
                         </Grid>
                         <Grid item xs={6}>
-                            <Paper elevation={4} sx={{ height: "100%" }}>
-                                <Box p={5}>
-                                    <Stack direction="row" alignItems="center" gap={1}>
-                                        <AssuredWorkloadRoundedIcon />
-                                        <Typography variant="h6">Rada Sołecka</Typography>
-                                    </Stack>
+                            <Paper elevation={4}>
+                                <Stack p={5} gap={2} sx={{ height: "100%" }}>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><AssuredWorkloadRoundedIcon sx={{ mr: "0.5rem" }} />Rada Sołecka</Typography>
                                     <Typography variant="body1" >
                                         Marek Łudziński - przewodniczący
                                     </Typography>
@@ -128,7 +126,13 @@ export default function FactsDesktop() {
                                         Wiesława Paluch
                                     </Typography>
                                 </Box>
+                                <Box>
+                                    <Typography variant="h6" sx={{ lineHeight: "1.2" }}><EventAvailableRoundedIcon sx={{ mr: "0.5rem" }} />Najblisze spotkanie</Typography>
+                                    <NewMeeting></NewMeeting>
+                                </Box>
+                            </Stack>
                             </Paper>
+
                         </Grid>
                     </Grid>
                 </Container>

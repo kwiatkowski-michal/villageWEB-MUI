@@ -32,7 +32,7 @@ const BusStopsMobile = () => {
                 <Container>
                     <Paper sx={{ backgroundColor: "black" }} elevation={10}>
                         <Box p={2}>
-                        <Typography pl={2} py={1} variant="h6" sx={{ color: "white" }}>
+                        <Typography pl={2} py={1} variant="h6" sx={{ color: "white", lineHeight: "1.2" }}>
                             <DepartureBoardRoundedIcon sx={{ color: "white", mr: "0.5rem" }}/>
                                 Komunikacja miejska
                             </Typography>
