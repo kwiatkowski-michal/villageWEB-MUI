@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from "../utils/supabaseClient";
 import { Database } from "../types/supabase";
-import { Card, CardMedia, CardContent, Typography, CardActions, Button, Grid, Container, Box, Tooltip, IconButton } from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, CardActions, Button, Grid, Container, Box, Tooltip, IconButton, Skeleton } from "@mui/material";
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
+
+interface MediaProps {
+  loading?: boolean;
+}
+
 export default function DokumentyDesktop() {
   const [documents, setDocuments] = useState<Database['public']['Tables']['documents']['Row'][]>([]);
   
@@ -22,15 +27,14 @@ export default function DokumentyDesktop() {
   return (
     <Box my={4}>
     <Container fixed>
-    <Grid container item spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+    <Grid container item spacing={{ xs: 2, md: 3 }}>
       {documents.map((document) => (
-        
-        <Grid key={document.id} item xs={12} sm={4} md={4}>
+        <Grid key={document.id} item xs={12} sm={6} md={4}>
         <Card sx={{minHeight: "100%", position: 'relative'}}>
-          <CardMedia
-          component="img"
-            image={document.card_media}
-          />
+            <CardMedia
+            component="img"
+              image={document.card_media}
+            />
           <CardContent>
           <Typography variant="overline" color="text.secondary">
               Data publikacji: {document.created_at}
@@ -49,6 +53,7 @@ export default function DokumentyDesktop() {
         </Card>
         </Grid>
       ))}
+      
     </Grid>
     </Container>
     </Box>
